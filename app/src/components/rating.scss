@@ -1,0 +1,57 @@
+.rating{
+    position: absolute;
+    width: 150px;
+    right: -175px;
+    animation: appear .5s;
+    &__wrapper{
+        display: flex;
+        border-radius: 5px;
+        overflow: hidden;
+        background-color: #fff;
+    }
+    &__likes{
+        width: auto;
+        text-align: center;
+        flex: 1;
+        &:last-child{
+            flex: 1.2;
+            border: none;
+        }
+        border-right: 1px solid #444;
+    }
+    &__likesHead{
+        font-size: 10px;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: #df585e;
+        font-weight: 700;
+        margin: 0;
+        width: 100%;
+        margin: 0;
+        padding: 5px 0;
+    }
+    &__likesTotal{
+        font-size: 24px;
+        font-weight: 700;
+        color: #909090;
+        margin: 0;
+    }
+    &:before{
+        content: "";
+        position: absolute;
+        top: 50%;
+        margin-top: -3.5px;
+        left:-10px;
+        border: solid 5px transparent;
+        border-right-color: #FFF;
+    }
+}
+
+@keyframes appear {
+    0% {
+        right: -100vh
+    }
+    100% {
+        right: -175px
+    }
+}

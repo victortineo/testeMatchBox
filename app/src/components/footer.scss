@@ -1,0 +1,30 @@
+.footer{
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+    height: 80px;
+    align-content: flex-end;
+    animation: footer 0.5s;
+    &__text{
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: 300;
+        letter-spacing: -0.3px;
+        &--link{
+            font-weight: 700;
+            text-decoration: none;
+        }
+        &--light{
+            font-weight: 300;
+        }
+    }
+}
+
+@keyframes footer {
+    0% {
+        transform: translateX(-50%)
+    }
+    100% {
+        transform: translateX(0)
+    }
+}
